@@ -1,0 +1,539 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_ywDwEA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_i9N9jt": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQ",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i9N9jt"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_LWJkbN": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_3CPLrr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>Not eligible for a Return or an Exchange: items purchased on sale or as a part of a promotion, including any item purchased as a part of <strong>'HOLIDAY PROMOS, BLACK FRIDAY, CYBER MONDAY, FLASH SALES, and SECRET SALES.' </strong>For eligible items, we offer refunds, gift card, store credit, or an exchange<strong>within 15 days of delivery date for full priced items with tags attached & in original, unworn condition</strong>(restrictions apply). If you return for a refund, the return costs are deducted from the total of your refund. An Exchange, Gift Card, and or purchase via Shop Now (within our Loop return platform) will not incur any handling fees.<br/><br/>You must ship back your items with the label we provide, otherwise your return may be rejected.<br/><br/>We reserve the right to refuse returns on items that have been worn, stained/soiled, laundered, or altered in any way. This includes such marks as bodily fluids, deodorant stains & removed/tampered with liners.<br/><br/><br/><br/><em>Please note: If we receive a non 12th Tribe item with your return, we are not responsible for it and we cannot return it to you.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GFYby6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I submit a return request?",
+            "icon": "none",
+            "row_content": "<p>You can start your return request by clicking <a href=\"https://12thtribe.loopreturns.com/#/\"><span style=\"text-decoration:underline\">here</span></a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KhxRya": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What items are not eligible for return or exchange?",
+            "icon": "none",
+            "row_content": "<p>Items that are NON-RETURNABLE and NON-EXCHANGEABLE and include:</p><p>SALE & FINAL SALE MARKED ITEMS</p><p>HATS</p><p>JEWELRY</p><p>ACCESSORIES</p><p>INTIMATES</p><p>VINTAGE GARMENTS</p><p>MASKS</p><p>THRASHER SHORTS*</p><p>*These are made to order and are eligible for gift cards ONLY.<br/><br/><br/><strong>ANY AND ALL ITEMS OUTSIDE OF THE 15-DAY POLICY ARE NON-RETURNABLE.</strong><br/>This also includes HOLIDAY PROMOS, BLACK FRIDAY, CYBER MONDAY, FLASH SALES, and SECRET SALES.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mL9eQd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the cost for return shipping?",
+            "icon": "none",
+            "row_content": "<p>If you select to return for a refund, the return cost of $9.95 is deducted from the total of your refund.</p><p>If you return for a Gift Card or Exchange, we will provide you a pre-paid* label.</p><p><em>*Vintage Thrasher Shorts are not eligible for a pre-paid return label.</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_3CPLrr",
+        "collapsible_row_GFYby6",
+        "collapsible_row_KhxRya",
+        "collapsible_row_mL9eQd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Returns",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_Nk7VAX": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_BfFmpF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I contact you about my order?",
+            "icon": "none",
+            "row_content": "<p>Have questions about your order or need assistance? We're here to help!</p><p><strong>Phone:</strong> XXXXXXXXXXXXX<br/><strong>Email:</strong> <a>XXXXXXXXXXXXXXXXXX</a></p><p>Don't hesitate to reach out—our team is ready to assist you!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ReCrhj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are your shipping options?",
+            "icon": "none",
+            "row_content": "<p><strong>US OVERNIGHT SHIPPING:</strong> Next business day delivery by end of day.</p><p><strong>US EXPRESS SHIPPING:</strong> Delivery within 2-3 business days.</p><p><strong>US STANDARD SHIPPING: </strong>6-8 business days.</p><p><strong>DHL INTERNATIONAL STANDARD SHIPPING: </strong>8-14 business days.</p><p><strong>FREE US STANDARD SHIPPING </strong>offer is valid on orders $120 or more. No promo code is required to redeem free shipping, just select Standard Shipping during checkout. Offer is subject to change without notice.</p><p><em>*Shipping thresholds are subject to change during sales and promotional events. Be sure to check the latest details at checkout to see how you can qualify for free shipping!</em></p><p><strong>US EXPRESS ORDERS:</strong></p><p>Orders must be placed before 12 PM PST in order to be shipped within one business day. Any orders placed Friday after 12 PM PST through Sunday, will be sent out the following business day. <strong>Carrier delays may occur during the holidays.</strong></p><p><strong>DHL INTERNATIONAL STANDARD SHIPPING</strong></p><p>All prices are subject to change upon ordering. You will be contacted if necessary.<br/><br/><em>*Please note these shipping options reflect estimated average shipping times.</em><br/><br/>Your package is tendered to our carriers within 24 hours, during standard business days. Delivery times are dependent on the carrier.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hL9mAM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "My package is Lost/Stolen/Damaged?",
+            "icon": "none",
+            "row_content": "<p><strong>TARQUOISE STORE PACKAGE PROTECTION</strong></p><p>If you insured your package with Tarquoise Store Package Protection, please reach out to us directly via live chat or send an email to <a>support@tarquoisestore.com</a>, and we’ll help resolve any issues related to lost, damaged in transit, or stolen packages.</p><p>Claims for packages marked as delivered but not received, and where there is no evidence of “porch piracy,” must be made within 5 days after the “delivery date” and no later than 15 days to ensure it was not mis-delivered or found on the premises. Claims for packages presumed lost (when the status is not marked as delivered) must be filed after 7 days (20 days for international) and within 30 days from the last scan.</p><p>If you did not include package protection with your order, Tarquoise Store is not responsible for any lost or stolen items. If you believe your package has been lost, please file a claim directly with the carrier.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yW3PrT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if my package was returned to sender?",
+            "icon": "none",
+            "row_content": "<p>If your package has been returned to the sender due to an address discrepancy, Tarquoise Store will not be held responsible. Once the item is successfully returned, we will contact you regarding the shipment and provide further assistance.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UxUMqV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I cancel my order or update the shipping address?",
+            "icon": "none",
+            "row_content": "<p>If your package has been returned to the sender due to an address discrepancy, Tarquoise Store will not be held responsible. Once the item is successfully returned, we will contact you regarding the shipment and provide further assistance.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rN4b4C": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship internationally?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_AaLpkr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I have to pay duties and taxes?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_BfFmpF",
+        "collapsible_row_ReCrhj",
+        "collapsible_row_hL9mAM",
+        "collapsible_row_yW3PrT",
+        "collapsible_row_UxUMqV",
+        "collapsible_row_rN4b4C",
+        "collapsible_row_AaLpkr"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Shipping & Delivery",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_Yx3eUQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_VxGjFH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will it take to receive my refund?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_eJgBNm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why didn't I receive the full amount in my refund?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_VxGjFH",
+        "collapsible_row_eJgBNm"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Refunds",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_zcgtk6": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_faJa8t": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is SHOP NOW and how does it work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_64zNQg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I receive my bonus credit?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_RarGti": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I use my Shop Now credit?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_hpqNjN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use a discount code with Shop Now?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_faJa8t",
+        "collapsible_row_64zNQg",
+        "collapsible_row_RarGti",
+        "collapsible_row_hpqNjN"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "SHOP NOW (Instant Credit)",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_bMEtdH": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_d4brLM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_d4brLM"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "NYC Store Returns",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_kDcANe": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Kwd4Le": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is instant exchange? How does it work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_rAbQpV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I receive my exchange?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_HKxKzk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is there a return cost for my original order if I DO INSTANT EXCHANGE?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_tTy9yG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will my Exchange order ship?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Kwd4Le",
+        "collapsible_row_rAbQpV",
+        "collapsible_row_HKxKzk",
+        "collapsible_row_tTy9yG"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Instant Exchange",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_aw36KP": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_y87YPm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_KGy8BU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_KPWMPR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_WXVGMw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_y87YPm",
+        "collapsible_row_KGy8BU",
+        "collapsible_row_KPWMPR",
+        "collapsible_row_WXVGMw"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Additional Questions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "rich_text_qaEpyx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_G3WbE8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get in touch",
+            "heading_size": "h2"
+          }
+        },
+        "text_b6qene": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have questions about your order, or a general enquiry?</p>"
+          }
+        },
+        "button_Ax7xaf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_G3WbE8",
+        "text_b6qene",
+        "button_Ax7xaf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1a6ec613-4f48-4e7a-b819-a31920a9be27",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    },
+    "newsletter_CHUGGK": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_QRDNTT": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOIN THE TRIBE",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_HKRmW3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our VIP Club for priority access to upcoming sales and product releases.</p>"
+          }
+        },
+        "email_form_tFpdzA": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_QRDNTT",
+        "paragraph_HKRmW3",
+        "email_form_tFpdzA"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1a6ec613-4f48-4e7a-b819-a31920a9be27",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_ywDwEA",
+    "collapsible_content_LWJkbN",
+    "collapsible_content_Nk7VAX",
+    "collapsible_content_Yx3eUQ",
+    "collapsible_content_zcgtk6",
+    "collapsible_content_bMEtdH",
+    "collapsible_content_kDcANe",
+    "collapsible_content_aw36KP",
+    "rich_text_qaEpyx",
+    "newsletter_CHUGGK"
+  ]
+}

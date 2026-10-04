@@ -1,0 +1,48 @@
+{% style %}
+  .scrolling-text--{{ section.id }} {
+    --move-speed: {{ section.settings.speed }}s;
+    background: {{section.settings.bgClr}};
+    color: {{ section.settings.textClr}};
+  }
+
+  .scrolling-text--{{ section.id }} span {
+    font-size: {{ section.settings.text_size }}px;
+  }
+  .scrolling-text--{{ section.id }} span.enable-stroke{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: {{ section.settings.textClr}};
+  }
+  @media(max-width:768px){
+   .scrolling-text--{{ section.id }} span {
+    font-size: {{ section.settings.text_size_mobile }}px;
+   }
+  }
+{% endstyle %}
+{% liquid
+  assign total_num = 11
+%}
+
+<div class="scrolling-text scrolling-text--{{ section.id }}">
+  <div
+    class="scrolling-text__inner scrolling-text__inner--{{ section.settings.direction }}"
+    aria-hidden="true"
+    tabindex="0"
+    style="gap: {% if section.settings.text_spacing %}40px{% else %}10px{% endif %};"
+  >
+    {% assign block_count = section.blocks.size %}
+    {% assign repeat_times = 12 %}
+    <!-- Adjust this number as needed -->
+    {% for i in (1..repeat_times) %}
+      {% for block in section.blocks %}
+        {% if block.settings.link != blank %}
+          <a href="{{ block.settings.link }}">
+        {% endif %}
+        <span class="{% if block.settings.enableStroke %} enable-stroke {% endif %}">{{ block.settings.text }}</span>
+        {% if block.settings.link != blank %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>

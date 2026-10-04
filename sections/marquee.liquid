@@ -1,0 +1,159 @@
+{% style %}
+  .scrolling-text{
+    overflow:hidden;
+    display:flex;
+  }
+
+  .scrolling-text__inner{
+    animation:scrolling-text var(--move-speed) linear infinite;
+    animation-play-state:running;
+    display:inline-flex;
+    margin:0.15em 0;
+    visibility:visible;
+    white-space:nowrap;
+  }
+
+  .scrolling-text__inner--right{
+    animation:scrolling-text-right var(--move-speed) linear infinite;
+    transform:translateX(-50%);
+  }
+
+  .scrolling-text span{
+    white-space:nowrap;
+  }
+  .scrolling-text a{
+    text-decoration:none;
+    color:inherit;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .scrolling-text:focus .scrolling-text__inner,.scrolling-text:hover .scrolling-text__inner{
+    animation-play-state:paused;
+  }
+
+  @keyframes scrolling-text{
+    0%{
+      transform:translateX(0);
+      -webkit-transform:translateX(0);
+    }
+    to{
+      transform:translateX(-100%);
+      -webkit-transform:translateX(-100%);
+    }
+  }
+
+  @keyframes scrolling-text-right{
+    0%{
+      transform:translateX(-50%);
+      -webkit-transform:translateX(-50%);
+    }
+    to{
+      transform:translateX(0);
+      -webkit-transform:translateX(0);
+    }
+  }
+{% endstyle %}
+{% render 'scrolling-text', section: section %}
+
+{% schema %}
+{
+  "name": "Marquee",
+  "class": "index-section--flush",
+  "settings": [
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text Size",
+      "default": 70,
+      "min": 12,
+      "max": 150,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Text Size for Mobile",
+      "default": 70,
+      "min": 12,
+      "max": 150,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "text_spacing",
+      "label": "Enable Text Spacing",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "Direction",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Speed",
+      "default": 200,
+      "min": 50,
+      "max": 600,
+      "step": 10,
+      "unit": "s"
+    },
+    {
+      "type":"color",
+      "id":"bgClr",
+      "label":"Background Color"
+    },
+    {
+      "type":"color",
+      "id":"textClr",
+      "label":"Text Color"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"text",
+      "name":"Text",
+      "limit": 3,
+      "settings":[
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Title",
+          "default": "Free shipping and returns"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type":"checkbox",
+          "id": "enableStroke",
+          "label": "Enable Text Stroke Style",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Marquee"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,33 @@
+<div
+  class="single_slide carousel-cell hero-media-wrapper"
+  data-slide="{{ block.id }}"
+  data-start-time="{{ startTime }}"
+  data-end-time="{{ endTime }}"
+  data-current-time="{{ timeNow }}"
+  data-show-slide="{{ showSlide }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{% endif %}
+  {% render 'image', image: block.settings.image, mobile_image: block.settings.image_mobile %}
+  {% if block.settings.link != blank %}</a>{% endif %}
+  <div class="btn_slide">
+    {% if block.settings.btn_url1 != blank %}
+      <a
+        href="{{ block.settings.btn_url1 }}"
+        class="btn btn_custom custom_btn_1-{{ block.id }}"
+        style="background-color:{{block.settings.btn_bg_1}} !important;color:{{block.settings.btn_clr_1}} !important;"
+      >
+        {{- block.settings.btn_text_1 -}}
+      </a>
+    {% endif -%}
+    {% if block.settings.btn_url2 != blank %}
+      <a
+        href="{{ block.settings.btn_url2 }}"
+        class="btn btn_custom custom_btn_2-{{ block.id }}"
+        style="background-color:{{block.settings.btn_bg_2}} !important;color:{{block.settings.btn_clr_2}} !important;"
+      >
+        {{- block.settings.btn_text_2 -}}
+      </a>
+    {% endif -%}
+  </div>
+</div>

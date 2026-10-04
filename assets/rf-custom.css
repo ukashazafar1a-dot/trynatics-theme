@@ -1,0 +1,119 @@
+/* header */
+.header__active-menu-item,
+.header__menu-item:hover span {
+  text-decoration: none !important;
+  color: #844dff !important ;
+}
+/* header */
+.font-primary {
+  font-family: var(--font-primary);
+}
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+.rf-card-heading .icon {
+  width: 16px;
+  height: 16px;
+}
+.rf-svg-wrapper .icon {
+  width: 15px !important;
+  height: 15px !important;
+  color: white !important;
+}
+.rf-slider-buttons button {
+  width: 32px !important;
+  height: 32px !important;
+}
+.rf-slider-buttons {
+  gap: 0.5em !important;
+}
+.rf-slider-buttons button {
+  border-radius: 50%;
+  /* background: red !important; */
+}
+.rf-slider-buttons button {
+  position: absolute;
+  background: red;
+}
+.rf-slider-buttons .slider-button--next {
+  top: 33%;
+  right: 3%;
+}
+
+.rf-slider-buttons .slider-button--prev {
+  top: 33%;
+  left: 3%;
+}
+.badge {
+  font-weight: 600;
+}
+/* collection */
+
+/* footer */
+
+/* product page */
+.accordion__title {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "PROXIMA NOVA" !important;
+  color: #5c5c5c !important;
+}
+.product__accordion .svg-wrapper {
+  width: 14px !important;
+  height: 14px !important;
+}
+.product__accordion .svg-wrapper .icon {
+  stroke: #5c5c5c !important;
+}
+.product__accordion .accordion__content,
+.product__accordion .metafield-rich_text_field p,
+.accordion__content {
+  font-size: 15px !important;
+  color: #5c5c5c !important;
+}
+.rf-button_opner {
+  margin-top: 30px !important;
+}
+.product .price {
+  font-size: 24px !important;
+  color: #5c5c5c !important;
+}
+.product-form__buttons .button {
+  background: #c43b74 !important;
+  color: #fff !important;
+}
+.product-form__buttons .button:after {
+  border: none !important;
+  box-shadow: none !important;
+}
+.product-form__buttons {
+  max-width: 100% !important;
+}
+.product__title h1 {
+  font-size: 34px !important;
+}
+.shopify-policy__container {
+  max-width: 100ch !important;
+  padding-bottom: 50px;
+}
+/* main product */
+
+/* faq*/
+
+/* contact */
+
+.contact__button .button {
+  max-width: 100%;
+  width: 100%;
+}
+#shopify-section-template--18887258865906__form #ContactForm {
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+}
+.thumbnail-list {
+  grid-gap: 0.4em !important;
+}
+/* .thumbnail-list__item {
+  width: 100px !important;
+}
+ */

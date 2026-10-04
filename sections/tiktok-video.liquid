@@ -1,0 +1,292 @@
+{% style %}
+  .tiktok-video-{{section.id}}{
+
+  }
+  .tiktok-video-{{section.id}} .feature-row{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width:992px;
+    margin:auto;
+    gap:1rem;
+    padding:2rem;
+  }
+  .tiktok-video-{{section.id}} .video-item{
+    min-width: 50%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+  .tiktok-video-{{section.id}} .feature-row__item h2{
+    padding-bottom:0px !important;
+  }
+  .tiktok-video-{{section.id}} .featured-row__subtext{
+    margin-bottom:15px;
+  }
+  .tiktok-video-{{section.id}} .featured-row__subtext p{
+    margin:0;
+  }
+      .video-wrap {
+      position: relative;
+      padding-bottom: 106%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+        display:none;
+    }
+    .video-wrap.active-now{
+      display:block;
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform:translateX(-50%);
+      width: fit-content;
+          border-radius: 10px;
+      height: 100%;
+    }
+    .cover-image-wrapper{
+      position:relative;
+
+    }
+  .cover-image-wrapper.active-now{
+  display:none;
+  }
+    .cover-image {
+
+      height:600px;
+      min-width:350px;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      width:fit-content;
+      margin:auto;
+      position:relative;
+    }
+  .cover-image img{
+    ax-width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    border-radius:8px;
+  }
+    .play--button{
+           position: absolute;
+
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 10px;
+      top: 50%;
+      left: 50%;
+      display: flex
+  ;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      height: fit-content;
+      transform: translate(-50%, -50%);
+      z-index:1;
+      cursor:pointer;
+    }
+  .play--button svg{
+    width:30px;
+    height:30px;
+    fill:white;
+  }
+  .play--button svg path{
+    fill:white;
+  }
+    .video-wrap iframe {
+      z-index: 1;
+      border-radius:8px;
+    }
+
+    .video-wrap .cover-image.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .video-side-wrapper{
+      position:relative;
+    }
+
+      @media screen and (max-width: 768px) {
+        .tiktok-video-{{section.id}} .feature-row{
+          gap:2.5rem;
+        }
+        .feature-row {
+          flex-direction: column;
+        }
+        .feature-row__item {
+         max-width: 100%;
+        }
+
+      }
+{% endstyle %}
+
+<div class="tiktok-video-{{ section.id }} color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    {% capture video_layout %}
+    <div class="feature-row__item video-item">
+      <div class="video-side-wrapper"  style="margin: 0 auto; max-width: {{ section.settings.video_width }}px;">
+        <div class="cover-image-wrapper ciw-{{ section.id }}">
+          {% if section.settings.image != blank  %}
+          <div class="cover-image">
+              {{
+                section.settings.image
+                | image_url: width: 600
+                | image_tag
+              }}
+              <div class="play--button pb-btn-{{ section.id }}" >
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.24182 2.32181C3.3919 2.23132 3.5784 2.22601 3.73338 2.30781L12.7334 7.05781C12.8974 7.14436 13 7.31457 13 7.5C13 7.68543 12.8974 7.85564 12.7334 7.94219L3.73338 12.6922C3.5784 12.774 3.3919 12.7687 3.24182 12.6782C3.09175 12.5877 3 12.4252 3 12.25V2.75C3 2.57476 3.09175 2.4123 3.24182 2.32181ZM4 3.57925V11.4207L11.4288 7.5L4 3.57925Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </div>
+          </div>
+          {% else %}
+          <div class="image-wrap">
+           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+        {% endif %}
+       
+        </div>
+        {% if section.settings.video_url != blank %}
+        <div class="video-wrap vw-{{ section.id }}">
+          <iframe
+            src="{{ section.settings.video_url | append: '?autoplay=0&mute=1&loop=1' }}"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      {% endif  %}     
+       
+      </div>
+    </div>
+  {% endcapture %}
+
+    <div class="feature-row" data-aos>
+      {% if section.settings.layout == 'left' %}
+        {{ video_layout }}
+      {% endif %}
+
+      <div
+        class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}"
+      >
+        {% if section.settings.subtitle != blank %}
+          <h5 class="h5">{{ section.settings.subtitle }}</h5>
+        {% endif %}
+        {% if section.settings.title != blank %}
+          <h2 class="h2">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          <div class="rte featured-row__subtext">{{ section.settings.text }}</div>
+        {% endif %}
+        {% if section.settings.button_label != blank %}
+          <a href="{{ section.settings.button_link }}" class="button button--primary">
+            {{ section.settings.button_label }}
+          </a>
+        {% endif %}
+      </div>
+
+      {% if section.settings.layout == 'right' %}
+        {{ video_layout }}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const coverImage = document.querySelector(".ciw-{{ section.id }}");
+    const videoIframe = document.querySelector(".vw-{{ section.id }}");
+    const btn = document.querySelector(".pb-btn-{{ section.id }}");
+    btn.addEventListener("click", function(){
+      coverImage.classList.add("active-now");
+      videoIframe.classList.add("active-now")
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Tiktok Video",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Cover Image"
+    },
+    {
+      "type": "range",
+      "id": "video_width",
+      "label": "Video width",
+      "default": 500,
+      "min": 100,
+      "max": 500,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Improved"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "Video with text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Pair large text with a video to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Optional button"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Video on left"
+        },
+        {
+          "value": "right",
+          "label": "Video on right"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tiktok Video"
+    }
+  ]
+}
+{% endschema %}

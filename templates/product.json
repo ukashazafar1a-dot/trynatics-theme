@@ -1,0 +1,230 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "collapsible_tab_n9CdG3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "",
+            "page": "",
+            "enable_product-description": true,
+            "meta_key": ""
+          }
+        },
+        "inventory_EQ9ztF": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "complementary_A3qdPX": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "Shop The Look",
+            "make_collapsible_row": true,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 2,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
+        "product_details_7AwdTy": {
+          "type": "product_details",
+          "disabled": true,
+          "settings": {
+            "heading4": "More Product Details",
+            "icon": "leaf"
+          }
+        },
+        "style_recommendation_3LP3wQ": {
+          "type": "style_recommendation",
+          "disabled": true,
+          "settings": {
+            "heading3": "Style Recommendations",
+            "icon": "eye"
+          }
+        },
+        "size_recomendation_zH8M3M": {
+          "type": "size_recomendation",
+          "disabled": true,
+          "settings": {
+            "heading1": "Size Recommendations",
+            "icon": "price_tag"
+          }
+        },
+        "care_guide_4hqBKQ": {
+          "type": "care_guide",
+          "disabled": true,
+          "settings": {
+            "heading2": "Care Guide",
+            "icon": "iron"
+          }
+        },
+        "popup_dwKtaQ": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "enable_btn": true,
+            "pop_title": "What is your return policy?",
+            "pop_details": "<p>Not eligible for a Return or an Exchange: items purchased on sale or as a part of a promotion, including any item purchased as a part of 'HOLIDAY PROMOS, BLACK FRIDAY, CYBER MONDAY, FLASH SALES, and SECRET SALES.'<br/><br/>For eligible items, we offer refunds, gift card, store credit, or an exchange within 15 days of delivery date for full priced items with tags attached & in original, unworn condition (restrictions apply). If you return for a refund, the return costs are deducted from the total of your refund. An Exchange, Gift Card, and or purchase via Shop Now (within our Loop return platform) will not incur any handling fees.<br/><br/>You must ship back your items with the label we provide, otherwise your return may be rejected.<br/><br/>We reserve the right to refuse returns on items that have been worn, stained/soiled, laundered, or altered in any way. This includes such marks as bodily fluids, deodorant stains & removed/tampered with liners.<br/><br/>You can start your return request by clicking here</p>",
+            "text": "Returns & Exchange Policy",
+            "page": ""
+          }
+        },
+        "icon_with_text_Wx6WDL": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "heading_1": "100% Authentic Turquoise Jewelry",
+            "icon_2": "return",
+            "heading_2": "Easy Returns Within 30 Days",
+            "icon_3": "truck",
+            "heading_3": "In-Stock Items Ship Immediately"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "collapsible_tab_n9CdG3",
+        "inventory_EQ9ztF",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "complementary_A3qdPX",
+        "product_details_7AwdTy",
+        "style_recommendation_3LP3wQ",
+        "size_recomendation_zH8M3M",
+        "care_guide_4hqBKQ",
+        "popup_dwKtaQ",
+        "icon_with_text_Wx6WDL"
+      ],
+      "custom_css": [
+        ".swym-button-bar {margin-left: -5px; width: 100%; text-align: center;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "1737637677522df949": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 44,
+        "padding_bottom": 28
+      }
+    },
+    "newsletter_A6KaDp": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_3UHdcK": {
+          "type": "heading",
+          "settings": {
+            "heading": "WELCOME TO TURQUOISE WORLD",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_9pfgWX": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our VIP Club for priority access to upcoming sales and product releases.</p>"
+          }
+        },
+        "email_form_xjNLWc": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_3UHdcK",
+        "paragraph_9pfgWX",
+        "email_form_xjNLWc"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1737637677522df949",
+    "related-products",
+    "newsletter_A6KaDp"
+  ]
+}

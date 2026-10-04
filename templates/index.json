@@ -1,0 +1,237 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_video_J7t8hf": {
+      "type": "hero-video",
+      "settings": {
+        "color_scheme": "scheme-1a6ec613-4f48-4e7a-b819-a31920a9be27",
+        "desktop_video": "https://cdn.shopify.com/videos/c/o/v/e2af9852dffc45d69b3fca90c058721b.mp4",
+        "mobile_video": "https://res.cloudinary.com/dzmrdbwqh/video/upload/v1744710778/uploads/videoplayback_uej8td.mp4",
+        "desktop_poster": "shopify://shop_images/73bcfc9f126184730310bfafa0e08ada.png",
+        "logo": "shopify://shop_images/Group_39535.png",
+        "btn1_text": "Shop Essentials",
+        "btn1_link": "shopify://collections/all",
+        "button_style_secondary": false
+      }
+    },
+    "marquee_UWwBWJ": {
+      "type": "marquee",
+      "blocks": {
+        "text_dRrezE": {
+          "type": "text",
+          "settings": {
+            "text": "PRE-REGISTER NOW",
+            "link": "",
+            "enableStroke": true
+          }
+        },
+        "text_nkiX6a": {
+          "type": "text",
+          "settings": {
+            "text": "TO BE THE FIRST TO TRY OUR NEW TABLETS",
+            "link": "",
+            "enableStroke": false
+          }
+        }
+      },
+      "block_order": [
+        "text_dRrezE",
+        "text_nkiX6a"
+      ],
+      "settings": {
+        "text_size": 40,
+        "text_size_mobile": 20,
+        "text_spacing": true,
+        "direction": "left",
+        "speed": 300,
+        "bgClr": "#cfeb7a",
+        "textClr": "#171717"
+      }
+    },
+    "rich_text_eiXNAD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MknhRi": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Built for mornings after, 8ams, and the ‘where tf am I?’ moments.</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_9e36Rd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Natics helps you wash it off—anywhere, anytime.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MknhRi",
+        "text_9e36Rd"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-d9da961b-93cd-4467-a783-158f522df763",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<strong>NEW ARRIVALS</strong>",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "enable_counter": false,
+        "btn_clr": "#000000",
+        "arrow_clr": "#ffffff",
+        "color_scheme": "scheme-d9da961b-93cd-4467-a783-158f522df763",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 20
+      }
+    },
+    "tiktok_video_69q7HG": {
+      "type": "tiktok-video",
+      "settings": {
+        "color_scheme": "scheme-d9da961b-93cd-4467-a783-158f522df763",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/c39cdf995662448db54c0d3974b1ca1a.mp4",
+        "image": "shopify://shop_images/f220031552414889a96f6e8b7995ea43_1726956454.jpg",
+        "video_width": 500,
+        "subtitle": "Say hellow to our",
+        "title": "NEW cleansing tablets!!🧼🥳",
+        "text": "<p>The perfect on-the-go face cleanser is not only travel friendly but they are packed with cherry blossom & Acai which are antioxidants to help soothe irritation on the skin & prickly pear seed to help restore your skins balance & hydration while effectively removing any excess oils, dirt, makeup, and sweat🤩</p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify://products/brightening-bundle",
+        "layout": "right"
+      }
+    },
+    "icon_with_text_Lgctnh": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_fQ7xHB": {
+          "type": "icon",
+          "settings": {
+            "icon": "fire",
+            "title": "Dorm Life",
+            "content": "68% of students don’t pack personal care essentials when traveling."
+          }
+        },
+        "icon_HtPWcG": {
+          "type": "icon",
+          "settings": {
+            "icon": "gluten_free",
+            "title": "Spontaneous Sleepovers",
+            "content": "75% of students say last-minute sleepover plans catch them unprepared."
+          }
+        },
+        "icon_gbFaMX": {
+          "type": "icon",
+          "settings": {
+            "icon": "heart",
+            "title": "No Time, No Shower",
+            "content": "90% of busy students need a quick solution for on-the-go freshness."
+          }
+        }
+      },
+      "block_order": [
+        "icon_fQ7xHB",
+        "icon_HtPWcG",
+        "icon_gbFaMX"
+      ],
+      "settings": {
+        "pt": 2,
+        "pb": 2,
+        "bg_color": "#eae1d9",
+        "text_color": "#000000"
+      }
+    },
+    "rich_text_EXnKb3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FYrEmp": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Our Customers Says",
+            "heading_size": "h1"
+          }
+        },
+        "text_NhPpyL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "image_xdimwT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Stainless-Steel-Water-Bottles-Food-Containers-More-04-15-2025_05_16_PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FYrEmp",
+        "text_NhPpyL",
+        "image_xdimwT"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 100%;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "carousel_ngxJwK": {
+      "type": "carousel",
+      "settings": {
+        "video-1": "shopify://files/videos/Download (2).mp4",
+        "video-2": "shopify://files/videos/Download (1).mp4",
+        "video-3": "shopify://files/videos/Download.mp4",
+        "product-1": "brightening-bundle",
+        "product-2": "nourish-daily-moisturizer",
+        "product-3": "vitamin-c-on-the-glow-balm"
+      }
+    }
+  },
+  "order": [
+    "hero_video_J7t8hf",
+    "marquee_UWwBWJ",
+    "rich_text_eiXNAD",
+    "featured_collection",
+    "tiktok_video_69q7HG",
+    "icon_with_text_Lgctnh",
+    "rich_text_EXnKb3",
+    "carousel_ngxJwK"
+  ]
+}

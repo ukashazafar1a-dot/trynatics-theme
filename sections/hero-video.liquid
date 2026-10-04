@@ -1,0 +1,210 @@
+{% style %}
+  .hvd-{{ section.id }}{
+    overflow:hidden;
+    width:100%;
+    height:100vh;
+    height:100dvh;
+    position:relative;
+  }
+  .hvd-{{section.id}} video{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+  }
+  .sticky-btns{
+    position:absolute;
+    width:100%;
+    bottom:10%;
+  }
+  .sticky-btns .logo-inner{
+    max-width: 250px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    width:100%;
+  }
+   .sticky-btns .logo-inner .media{
+     width:100%;
+     background:transparent;
+     margin-bottom:20px;
+   }
+  .btns-flexs{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap:wrap;
+  }
+  .hv-btn{
+    background:white;
+    color:black;
+    padding: 10px 30px;
+    font-size:16px;
+    text-align:center;
+    min-width:320px;
+  }
+
+  @media(max-width:768px){
+    .btns-flexs{
+      gap:1rem;
+    }
+  }
+{% endstyle %}
+
+<div
+  class="hvd-wrapper hvd-{{ section.id }} gradient color-{{ section.settings.color_scheme }}"
+>
+  <media-video class="overflow-hidden">
+    <video
+      id="video-{{ section.id }}"
+      class="h-full w-full object-cover"
+      playsinline=""
+      muted=""
+      loop=""
+      preload="auto"
+      fetchpriority="high"
+      autoplay=""
+      data-mobile-poster="{{ section.settings.mobile_poster | image_url: width: 600  }}"
+      data-desktop-poster="{{ section.settings.desktop_poster | image_url: width: 1200 }}"
+      poster="{{ section.settings.desktop_poster | image_url: width: 1200 }}"
+    >
+      {% if section.settings.mobile_video != blank %}
+        <source
+          src="{{ section.settings.mobile_video }}"
+          height="1080"
+          width="606"
+          type="video/mp4"
+          media="(orientation: portrait)"
+        >
+      {% endif %}
+
+      <source
+        src="{{ section.settings.desktop_video }}"
+        height="1080"
+        width="1920"
+        type="video/mp4"
+        media="(orientation: landscape)"
+      >
+    </video>
+  </media-video>
+  <div class="sticky-btns">
+    <div class="logo-inner">
+      <div
+        class="image-with-text__media image-with-text__media--adapt background-transparent media animate--{{ section.settings.image_behavior }}"
+        {% if section.settings.logo != blank %}
+          style="padding-bottom: {{ 1 | divided_by: section.settings.logo.aspect_ratio | times: 100 }}%;"
+        {% endif %}
+      >
+        {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+        {%- capture sizes -%}
+          (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+          (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+        {%- endcapture -%}
+        {{
+          section.settings.logo
+          | image_url: width: 1200
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: 'auto'
+        }}
+      </div>
+    </div>
+    <div class="btns-flexs">
+      {%- if section.settings.btn1_link != blank -%}
+        <a
+          {% if section.settings.btn1_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.btn1_link }}"
+          {% endif %}
+          class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+        >
+          {{ section.settings.btn1_text | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  class MediaVideo extends HTMLElement {
+      constructor() {
+          if (super(),
+          this.video = this.querySelector("video"),
+          !!this.video) {
+              if (this.isMobile = window.matchMedia("(max-width: 959px)"),
+              this.mobile_poster = this.video.dataset.mobilePoster || this.video.dataset.desktopPoster,
+              this.desktop_poster = this.video.dataset.desktopPoster || this.video.dataset.mobilePoster,
+              this.isMobile.matches) {
+                  this.video.setAttribute("poster", this.mobile_poster);
+                  return
+              }
+              this.video.setAttribute("poster", this.desktop_poster)
+          }
+      }
+  }
+  customElements.define("media-video", MediaVideo);
+</script>
+
+{% schema %}
+{
+  "name":"Hero Video",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.multirow.settings.container_color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id":"desktop_video",
+      "label":"Desktop Video"
+    },
+    {
+      "type": "text",
+      "id":"mobile_video",
+      "label":"Mobile Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_poster",
+      "label": "Desktop Poster"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_poster",
+      "label": "Mobile Poster"
+    },
+    {
+      "type": "header",
+      "content":"Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id":"btn1_text",
+      "label":"Button 1 Text"
+    },
+    {
+      "type": "url",
+      "id":"btn1_link",
+      "label":"Button 1 Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+    }
+  ],
+  "presets":[
+    {
+      "name":"Hero Video"
+    }
+  ]
+}
+{% endschema %}

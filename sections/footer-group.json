@@ -1,0 +1,74 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_nFBMr9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_39526.png",
+            "image_width": 100,
+            "alignment": "center"
+          }
+        },
+        "link_list_P9kdmn": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>Quick Links</strong>",
+            "menu": "customer-account-main-menu"
+          }
+        },
+        "social_g88F7b": {
+          "type": "social",
+          "settings": {
+            "heading": "<strong>Follow Us</strong>",
+            "subtext": "",
+            "enable_follow_on_shop": true,
+            "show_social": true
+          }
+        },
+        "newsletter_FNmXQc": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "<strong>Sign up to get 15% off!</strong>",
+            "subtext": "<p>Opt in to be the first to get exclusive discounts, product giveaways, and everything Natics.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_nFBMr9",
+        "link_list_P9kdmn",
+        "social_g88F7b",
+        "newsletter_FNmXQc"
+      ],
+      "settings": {
+        "s_padding_top": 12,
+        "s_padding_bottom": 12,
+        "bg_clr": "#f7f1e9",
+        "width": 34,
+        "height": 34,
+        "color_scheme": "scheme-4",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

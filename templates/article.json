@@ -1,0 +1,109 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {}
+    },
+    "collection_list_G9T983": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_epU3E6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earrings",
+            "subtitle": "",
+            "enable_btn": false,
+            "btn_title": "SHOP BENEFIT SALE"
+          }
+        },
+        "featured_collection_8ktfAW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage",
+            "subtitle": "",
+            "enable_btn": false,
+            "btn_title": "SHOP BENEFIT SALE"
+          }
+        },
+        "featured_collection_hrtLCc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rings",
+            "subtitle": "",
+            "enable_btn": false,
+            "btn_title": "SHOP BENEFIT SALE"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_epU3E6",
+        "featured_collection_8ktfAW",
+        "featured_collection_hrtLCc"
+      ],
+      "settings": {
+        "title": "",
+        "enable_col_gap": false,
+        "col_gap": 10,
+        "card_width": 50,
+        "column_gap": false,
+        "lg_title": false,
+        "title_size": 20,
+        "mob_title_size": 20,
+        "heading_size": "h1",
+        "position": "center",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_list_G9T983"
+  ]
+}

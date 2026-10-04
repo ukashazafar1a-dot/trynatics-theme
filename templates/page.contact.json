@@ -1,0 +1,104 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact_information_DQCAdk": {
+      "type": "contact-information",
+      "custom_css": [],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 32,
+        "tagline": "Have questions about your order or need assistance? We're here to help!",
+        "heading": "Contact us"
+      }
+    },
+    "rich_text_GMwwn9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bgEtdq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact us",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bgEtdq"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_eyfpVU": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_HxFUWN": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOIN THE TRIBE",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_t4WhpC": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our VIP Club for priority access to upcoming sales and product releases.</p>"
+          }
+        },
+        "email_form_DdkAHU": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_HxFUWN",
+        "paragraph_t4WhpC",
+        "email_form_DdkAHU"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1a6ec613-4f48-4e7a-b819-a31920a9be27",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact_information_DQCAdk",
+    "rich_text_GMwwn9",
+    "form",
+    "newsletter_eyfpVU"
+  ]
+}
